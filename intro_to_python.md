@@ -15,7 +15,6 @@ ans_1=wrd[3:]
 print(ans_1)
 #cana
 ```
----
 ## Python Dictionary Exercises
 ### Dictionaries
 Select the correct function to print the number of key/value pairs in the dictionary:
