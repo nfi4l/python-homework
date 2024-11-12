@@ -1,4 +1,89 @@
 # Homework
+*2024-11-12*
+## Python Slicing Exercises
+ Slice the word until first "a". (Tosc)
+```python
+wrd="Toscana"
+ans_1=wrd[:-3]
+print(ans_1)
+#Tosc
+```
+Slice the word so that you get "cana".
+```python
+wrd="Toscana"
+ans_1=wrd[3:]
+print(ans_1)
+#cana
+```
+---
+## Python Dictionary Exercises
+### Dictionaries
+Select the correct function to print the number of key/value pairs in the dictionary:
+```python
+x = {'type' : 'fruit', 'name' : 'banana'}
+print(len(x))
+```
+### Access Dictionaries
+Use the get method to print the value of the "model" key of the car dictionary.
+```python
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(car.get("model"))
+```
+### Change Dictionaries
+Change the "year" value from 1964 to 2020.
+```python
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car["year"] = 2020
+```
+### Add Dictionary Items
+Add the key/value pair "color" : "red" to the car dictionary.
+```python
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car["color"]="red"
+```
+Insert the missing part to add an item to the dictionary.
+```python
+x = {'type' : 'fruit', 'name' : 'apple'}
+x.update({'color'='green'})
+```
+### Remove Dictionary Items
+Use the pop method to remove "model" from the car dictionary.
+```python
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car.pop("model")
+```
+Use the clear method to empty the car dictionary.
+```python
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car.clear()
+```
+Insert a correct syntax for removing the 'color' item of the dictionary:
+```python
+myvar = {'type' : 'fruit', 'name' : 'apple', 'color' : 'red'}
+del myvar("color")
+```
+
+---
 *2024-11-10*
 ## Exercise 1: print() function
 ```python
@@ -21,8 +106,8 @@ print ("I drank", glass_of_water ,"glasses of water today.")
 ```
 Fill the print function so it prints glass_of_water
 ```python
-glass_of_water=glass_of_water + 1`
-print(glass_of_water)`
+glass_of_water=glass_of_water + 1
+print(glass_of_water)
 #4
 ```
 
@@ -44,7 +129,7 @@ Assign a float with 2 decimals to the variable below.
 global_mean_sea_level_2018=21
 global_mean_sea_level_2018=21.36
 print(global_mean_sea_level_2018)
-#21.36`
+#21.36
 ```
 
 ## Exercise 9: Strings
