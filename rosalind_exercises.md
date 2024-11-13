@@ -8,7 +8,7 @@
 ```python
 a=950
 b=862
-hypothenuse=a**+b**
+hypothenuse = a**2 + b**2
 print(hypothenuse)
 #1645544
 ```
