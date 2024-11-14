@@ -1,4 +1,90 @@
 # Homework
+*2024-11-14*
+## Boolean
+The statement below would print a Boolean value, which one?
+```python
+print(10 > 9)
+#True
+```
+The statement below would print a Boolean value, which one?
+```python
+print(10 == 9)
+#False
+```
+The statement below would print a Boolean value, which one?
+```python
+print(10 < 9)
+#False
+```
+The statement below would print a Boolean value, which one?
+```python
+print(bool("abc"))
+#True
+```
+The statement below would print a Boolean value, which one?
+```python
+print(bool(0))
+#False
+```
+
+## If Else
+Print "Hello World" if a is greater than b.
+```python
+a = 50
+b = 10
+if a > b:
+  print("Hello World")
+```
+Print "Hello World" if a is not equal to b.
+```python
+a = 50
+b = 10
+if a != b:
+  print("Hello World")
+```
+Print "Yes" if a is equal to b, otherwise print "No".
+```python
+a = 50
+b = 10
+if a == b:
+  print("Yes")
+else:
+  print("No")
+```
+Print "1" if a is equal to b, print "2" if a is greater than b, otherwise print "3".
+```python
+a = 50
+b = 10
+if a == b:
+  print("1")
+elif a > b:
+  print("2")
+else:
+  print("3")
+```
+Print "Hello" if a is equal to b, and c is equal to d.
+```python
+if a == b and c == d:
+  print("Hello")
+```
+Print "Hello" if a is equal to b, or if c is equal to d.
+```python
+if a == b or c == d:
+  print("Hello")
+```
+Complete the code block, print "YES" if 5 is larger than 2.
+Hint: remember the indentation.
+```python
+if 5 > 2:
+  print("YES")
+```
+Use the correct one line short hand syntax to print "YES" if a is equal to b, otherwise print("NO").
+```python
+a = 2
+b = 5
+print("YES") if a == b else print("NO")
+```
+---
 *2024-11-12*
 ## Python Slicing Exercises
  Slice the word until first "a". (Tosc)
