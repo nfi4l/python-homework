@@ -1,5 +1,9 @@
-As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect
+Monty Python's Holy Grail But It's In Fallout: New Vegas (Video linked in image)
 
+[![Monty Python's Holy Grail But It's In Fallout: New Vegas](https://img.youtube.com/vi/CwRttpeyv6o/hqdefault.jpg)](https://www.youtube.com/watch?v=CwRttpeyv6o)
+
+As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect
+~~~
           ,  .'''''.  ...    ''''',  .'          
             ','     ,.MMMM;.;'      '.            
              ;;    ;MMMMMMMMM;     ;;'            
@@ -35,4 +39,5 @@ As Gregor Samsa awoke one morning from uneasy dreams he found himself transforme
    '        :'                       '        ''  
  .          :                        '          ' 
 '          ;                          ;          '
-          ;                            '          
+          ;                            '
+~~~
