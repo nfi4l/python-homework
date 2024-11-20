@@ -3,10 +3,12 @@
 #Given: A DNA string s of length at most 1000 bp.
 #Return: The reverse complement sc of s.
 
-from util import import_file
+from util import read_input
 
 inp = "../rosalind_data/rosalind_revc.txt"
-dna = import_file(inp)
+dna_proto = read_input(inp)
+
+dna = dna_proto[0] #put element from list into a string
 
 comp = ""
 rev = ""
@@ -24,7 +26,7 @@ def complement(x):
         return "N"
     
 for base in dna:
-    comp = comp + str(complement(base))
+    comp = comp + (complement(base))
 
 rev = comp[::-1]
 
