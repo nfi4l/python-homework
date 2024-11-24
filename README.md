@@ -1,3 +1,6 @@
+me when code work
+![cat-meme](https://github.com/user-attachments/assets/0bf3df37-2d8e-4e44-aa5d-df5d161a2bfe)
+
 Monty Python's Holy Grail But It's In Fallout: New Vegas (Video linked in image)
 
 [![Monty Python's Holy Grail But It's In Fallout: New Vegas](https://img.youtube.com/vi/CwRttpeyv6o/hqdefault.jpg)](https://www.youtube.com/watch?v=CwRttpeyv6o)
