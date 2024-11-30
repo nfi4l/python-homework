@@ -9,6 +9,7 @@ def read_input(filepath):
             stripped.append(line.strip())
     return stripped
 
+#import entire file content
 def import_file (filepath):
     with open(filepath, "r") as imp:
         imp_file = imp.read()
