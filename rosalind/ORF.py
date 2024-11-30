@@ -13,45 +13,12 @@
 #======================================
 
 from util import read_input
+from util import complement
+from util import code
 
 #import seq from fasta
 inp = read_input("../rosalind_data/rosalind_orf.txt")
 dna = ''.join(inp[1:])
-
-print(dna)
-
-def complement(x):
-    if x == "A":
-        return "T"
-    if x == "C":
-        return "G"
-    if x == "G":
-        return "C"
-    if x == "T":
-        return "A"
-    else:
-        return "N"
-    
-# def find_orf (rna):
-    
-code = {
-    "UUU": "F",      "CUU": "L",      "AUU": "I",      "GUU": "V",
-    "UUC": "F",      "CUC": "L",      "AUC": "I",      "GUC": "V",
-    "UUA": "L",      "CUA": "L",      "AUA": "I",      "GUA": "V",
-    "UUG": "L",      "CUG": "L",      "AUG": "M",      "GUG": "V",
-    "UCU": "S",      "CCU": "P",      "ACU": "T",      "GCU": "A",
-    "UCC": "S",      "CCC": "P",      "ACC": "T",      "GCC": "A",
-    "UCA": "S",      "CCA": "P",      "ACA": "T",      "GCA": "A",
-    "UCG": "S",      "CCG": "P",      "ACG": "T",      "GCG": "A",
-    "UAU": "Y",      "CAU": "H",      "AAU": "N",      "GAU": "D",
-    "UAC": "Y",      "CAC": "H",      "AAC": "N",      "GAC": "D",
-    "UAA": "Stop",   "CAA": "Q",      "AAA": "K",      "GAA": "E",
-    "UAG": "Stop",   "CAG": "Q",      "AAG": "K",      "GAG": "E",
-    "UGU": "C",      "CGU": "R",      "AGU": "S",      "GGU": "G",
-    "UGC": "C",      "CGC": "R",      "AGC": "S",      "GGC": "G",
-    "UGA": "Stop",   "CGA": "R",      "AGA": "R",      "GGA": "G",
-    "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G"
-}
 
 # transcribe forward DNA into RNA_f
 rna_f=dna.replace("T","U")
@@ -59,22 +26,20 @@ rna_f=dna.replace("T","U")
 #create reverse complement strand
 comp = ""
 rev = ""
-    
 for base in dna:
     comp = comp + (complement(base))
-
 rev = comp[::-1]
 
 #transcribe reverse DNA into RNA_r
 rna_r=rev.replace("T","U")
 
-#checkpoint
-# print("rna strand:" + rna_f)
-# print("~~~")
-# print("reverse complementary strand:" + rev)
-# print("~~~")
-# print("reverse rna strand:" + rna_r)
-# print("")
+    #checkpoint
+    # print("rna strand:" + rna_f)
+    # print("~~~")
+    # print("reverse complementary strand:" + rev)
+    # print("~~~")
+    # print("reverse rna strand:" + rna_r)
+    # print("")
 
 #find the orfs in RNA_f & RNA_r
 def find_orfs(rna):
@@ -92,10 +57,10 @@ def find_orfs(rna):
 mrna_f = find_orfs(rna_f)
 mrna_r = find_orfs(rna_r)
 
-#output mRNA_f & mRNA_r checkpoint
-# print("mRNA forward:" + str(mrna_f))
-# print("~~~")
-# print("mRNA reverse:" + str(mrna_r))
+    #output mRNA_f & mRNA_r checkpoint
+    # print("mRNA forward:" + str(mrna_f))
+    # print("~~~")
+    # print("mRNA reverse:" + str(mrna_r))
 
 #combine fwd & rev mrna
 orfs = mrna_r+mrna_f
