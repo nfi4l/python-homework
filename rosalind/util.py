@@ -28,6 +28,17 @@ def complement(x):
     else:
         return "N"
 
+#import file with two columns
+def import_columns(filepath):
+    with open(filepath, "r") as file:
+        ID1 = []
+        ID2 = []
+        for line in file:
+            inp1, inp2 = line.split()
+            ID1.append(inp1)
+            ID2.append(inp2)
+
+#find open reading frames
 def find_orfs(rna):
     stop_codons = ["UAA", "UAG", "UGA"]
     orfs=[]
