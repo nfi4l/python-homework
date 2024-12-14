@@ -28,6 +28,23 @@ def complement(x):
     else:
         return "N"
 
+#read fasta_file
+
+def read_fasta(path):
+    sequences = {}
+    current_id = ""
+    with open(path, 'r') as fasta:
+        for line in fasta:
+            line = line.strip()
+            if line.startswith(">"):
+                header = line
+                current_id = header[1:]
+                sequences[current_id] = ""
+            else:
+                sequence = line
+                sequences[current_id] = sequences[current_id] + sequence
+    return sequences
+
 #import file with two columns
 def import_columns(filepath):
     with open(filepath, "r") as file:
